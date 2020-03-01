@@ -19,13 +19,14 @@ header{
 }
 
 header input{
-    width: 80%;
+    width: 100%;
     height: 50px;
     float: left;
     color: #fff;
     font-size: 15px;
     font-weight: 400;
-    text-indent: 20px ;
+    text-indent: 18px ;
+    padding: 0 60px 0 0;
     background: rgba(255, 255, 255,0.2);
     border-top-left-radius: 5px;
     border-top-right-radius: 25px;
@@ -39,11 +40,39 @@ header input{
 
     -webkit-appearance: none;
     -moz-appearance: none;
-    -o-appearence: none;
-    appearance: none;
+    /* -o-appearence: none;
+    appearance: none; */
 
 }
 
-header ::-webkit-input-placeholder{
+header input::-webkit-input-placeholder{
     color: rgba(255, 255, 255,0.2);
+}
+header input::-moz-input-placeholder{
+    color: rgba(255, 255, 255,0.2);
+}
+header input:-moz-input-placeholder{
+    color: rgba(255, 255, 255,0.2);
+}
+header input::-ms-input-placeholder{
+    color: rgba(255, 255, 255,0.2);
+}
+
+header button{
+    width : 50px;
+    height: 50px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 2;
+    border-radius: 25px;
+    background: #fff;
+    border: 0px;
+    box-shadow:none;
+
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearence: none;
+    appearance: none;  
 }
